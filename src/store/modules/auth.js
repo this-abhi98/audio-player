@@ -1,4 +1,4 @@
-import api from '../../api/imgur';
+import api from '../../api/spotify';
 
 const state = {
     token: null //set token to null initially
@@ -12,7 +12,7 @@ const getters = {
 
 const actions = {
     login: () => {
-        api.login();   //call api in imgur
+        api.login();   //call api in spotify
     },
     logout: ({ commit }) => {               //commit to call mutaions
         commit('setTotken',null);               //set token to null to logout
