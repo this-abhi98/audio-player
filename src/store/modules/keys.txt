@@ -7,12 +7,13 @@ https://accounts.spotify.com/oauth2/authorize?client_id=380bf91e73e14b3fac
 ff1f9ba98646aa&response_type=
 token&redirect_uri=http%3A%2F%2Flocalhost%3A8080
 
-http://localhost:8080/#access_token=BQAlvPc1RfErh7ORtxOLXNKvTT_
+
+http://local7host:8080/#access_token=BQAlvPc1RfErh7ORtxOLXNKvTT_
 TmpNhmoNr9NAcPvO5GloAsAShjYSOmfl_K71VYiewI1G7UtsHAsy8iFF5GWG
 hgNJP0EtjXw2QzrbQ2OuxXPl6fuybSANPVPe7w-
 qoBsx6n5t3dZBAF_k6gZ9rRP1NisQQqDk-PxM&token_type=Bearer&expires_in=3600
 
 
-https://api.spotify.com/oauth2/authorize?
-client_id=YOUR_CLIENT_ID&response_type=REQUESTED_RESPONSE_TYPE&
-state=APPLICATION_STATE
+https://accounts.spotify.com/authorize?client_id=380bf91e73e14b3facff1f9ba9
+8646aa&response_type=
+token&redirect_uri=http%3A%2F%2Flocalhost%3A8080%2Fcallback `

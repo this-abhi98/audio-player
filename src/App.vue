@@ -2,6 +2,8 @@
 
 <div>
     <AppHeader> </AppHeader>
+    czzc
+    <router-view></router-view>         <!--it will put particular component when it matches the route-->
 </div>
 
 </template>
@@ -16,3 +18,7 @@ export default {
     }
 };
 </script>
+
+<style scoped>
+
+</style>

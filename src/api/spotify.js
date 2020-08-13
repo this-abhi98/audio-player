@@ -2,7 +2,7 @@ import qs from "qs";
 
 const CLIENT_ID ='380bf91e73e14b3facff1f9ba98646aa';
 const ROOT_URL = 'https://accounts.spotify.com';
-const REDIRECT_URI = 'http://localhost:8080'
+const REDIRECT_URI = 'http://localhost:8080/callback'
 
 export default {
 
@@ -15,4 +15,4 @@ export default {
 
        window.location = `${ROOT_URL}/authorize?${qs.stringify(querystring)}`;
     }
-};
+}; 
