@@ -1,5 +1,4 @@
 <template>
-  
 
 <router-link
   to="/playing"

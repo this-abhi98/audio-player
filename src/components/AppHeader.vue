@@ -34,6 +34,5 @@ export default {
     background-color: aquamarine;
     color: white;
     padding-top: 8%;
-    margin-left:-100px ;
 }
 </style>

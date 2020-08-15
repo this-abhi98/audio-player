@@ -16,9 +16,9 @@
             </li>
 
             <li>
-              <a class="list__link" href>
+              <router-link to="/callback" class="list__link">
                 <i class="fa fa-search"></i>
-              </a>
+              </router-link>
             </li>
           </ul>
 
@@ -46,14 +46,14 @@
 
              <audio autoplay id="player" :src="audioUrl"></audio>
 
-            <li onclick="document.getElementById('player').play()">
+            <li onclick="document.getElementById('player').play()" v-if="!flag" @click="flagTrue">
               <a href="#" class="list__link" >
 
                 <i height='10px' width='10px' class="fa fa-play"></i>
               </a>
             </li>
 
-          <li onclick="document.getElementById('player').pause()" >
+          <li onclick="document.getElementById('player').pause()" v-if="flag" @click="flagFalse" >
               <a href="#" class="list__link">
                 <i height='10px' width='10px' class="fa fa-pause"></i>
               </a>
@@ -102,12 +102,16 @@
 
 
 <script>
-
 export default {
 
 
   props: ["selectedAudio"],
-  computed: {
+
+   data(){
+      return{ flag:true};
+    },
+
+ computed: {
     audioUrl() {
       return this.selectedAudio.preview_url;
     },
@@ -115,8 +119,16 @@ export default {
 
         return this.selectedAudio.album.images[1].url;
     },
-  
-  },
+
+  },methods: {
+
+      flagFalse(){
+          this.flag=false;
+      },
+       flagTrue(){
+        this.flag=true;
+        }
+  }
 
 };
 </script>

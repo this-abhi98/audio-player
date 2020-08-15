@@ -56,7 +56,15 @@ export default {
 
   .player-container{
     font-family: 'Roboto', Arial, Verdana, sans-serif;
-    background: #e4f2fb;
-    height: 90vh;
+    overflow: hidden;
+  }
+
+  .wrapper{
+    overflow: hidden;
+    height: 87vh;
+      background: #322f3d;
+  }
+  body{
+    background: #322f3d;
   }
 </style>
