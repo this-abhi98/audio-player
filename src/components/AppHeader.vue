@@ -1,9 +1,7 @@
 <template>
     <div>
-        <h3 >Login</h3>
-        {{isLoggedIn}}
-        <div class='right menu'>
-            <h1><a href="#" class="ui-item" @click="login"> login-pp</a></h1>            
+        <div class="dialog" v-if="!isLoggedIn">
+            <h1><a href="#"  @click="login">Hey! Click me to approve yourself to spotify</a></h1>            
         </div>        
     </div>
 </template>
@@ -26,3 +24,16 @@ export default {
 };
 </script>
 
+
+<style  scoped>
+.dialog{
+    position:absolute;
+    text-align: center;
+    height: 40%;
+    width: 40%;
+    background-color: aquamarine;
+    color: white;
+    padding-top: 8%;
+    margin-left:-100px ;
+}
+</style>
