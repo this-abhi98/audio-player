@@ -2,7 +2,7 @@ import qs from "qs";
 
 const CLIENT_ID ='380bf91e73e14b3facff1f9ba98646aa';
 const ROOT_URL = 'https://accounts.spotify.com';
-const REDIRECT_URI = 'https://abhishek-audio-player.netlify.app';
+const REDIRECT_URI = 'https://abhishek-audio-player.netlify.app/callback';
 
 export default {
 
